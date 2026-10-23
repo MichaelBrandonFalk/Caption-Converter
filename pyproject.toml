@@ -3,8 +3,8 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "subtitle-converter"
-version = "1.0.0"
+name = "caption-converter"
+version = "1.1.0"
 description = "Cross-platform subtitle converter for SRT, VTT, and TTML"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -14,7 +14,7 @@ authors = [
 ]
 
 [project.scripts]
-subtitle-converter = "subtitle_converter.cli:main"
+caption-converter = "caption_converter.cli:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

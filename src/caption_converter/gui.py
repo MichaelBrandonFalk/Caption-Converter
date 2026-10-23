@@ -7,10 +7,10 @@ from tkinter import filedialog, messagebox, ttk
 from .core import convert_file
 
 
-class SubtitleConverterApp:
+class CaptionConverterApp:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
-        self.root.title("Subtitle Converter")
+        self.root.title("Caption Converter")
         self.root.geometry("860x620")
         self.root.minsize(760, 560)
 
@@ -42,7 +42,7 @@ class SubtitleConverterApp:
 
         header = ttk.Frame(shell, style="App.TFrame")
         header.pack(fill="x")
-        ttk.Label(header, text="Subtitle Converter", style="Title.TLabel").pack(anchor="w")
+        ttk.Label(header, text="Caption Converter", style="Title.TLabel").pack(anchor="w")
         ttk.Label(
             header,
             text="Convert SRT, VTT, and TTML without the macOS-only wrapper.",
@@ -167,6 +167,6 @@ class SubtitleConverterApp:
 
 def launch_gui() -> None:
     root = tk.Tk()
-    SubtitleConverterApp(root)
+    CaptionConverterApp(root)
     root.mainloop()
 

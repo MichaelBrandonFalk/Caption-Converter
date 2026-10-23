@@ -1,6 +1,5 @@
-from subtitle_converter.gui import launch_gui
+from caption_converter.cli import main
 
 
 if __name__ == "__main__":
-    launch_gui()
-
+    raise SystemExit(main())

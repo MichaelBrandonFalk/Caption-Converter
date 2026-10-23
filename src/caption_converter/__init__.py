@@ -1,4 +1,4 @@
-"""Subtitle Converter package."""
+"""Caption Converter package."""
 
 from .core import convert_file
 
