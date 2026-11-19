@@ -1,0 +1,28 @@
+name: Caption Regression Tests
+
+on:
+  push:
+    branches: [main, "codex/**"]
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install desktop test dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-tk
+      - name: Python parser and desktop workflow regressions
+        run: PYTHONPATH=src python3 -m unittest discover -s tests -v
+      - name: Browser parser and conversion workflow regressions
+        run: node --test tests/caption_validation.test.cjs

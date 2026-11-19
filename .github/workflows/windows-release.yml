@@ -10,6 +10,9 @@ permissions:
   contents: write
 
 jobs:
+  check-source:
+    uses: ./.github/workflows/tests.yml
+
   build-macos:
     runs-on: macos-15
     steps:
@@ -133,7 +136,7 @@ jobs:
 
   release:
     if: startsWith(github.ref, 'refs/tags/')
-    needs: [build-macos, build-windows, build-linux, verify-linux]
+    needs: [check-source, build-macos, build-windows, build-linux, verify-linux]
     runs-on: ubuntu-latest
     steps:
       - name: Download builds

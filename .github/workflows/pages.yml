@@ -18,7 +18,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  check-source:
+    uses: ./.github/workflows/tests.yml
+
   deploy:
+    needs: check-source
     runs-on: ubuntu-latest
     environment:
       name: github-pages
