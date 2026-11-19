@@ -1,0 +1,936 @@
+[
+  {
+    "name": "episode_1_detached_srt_line",
+    "format": "srt",
+    "source": "189\n00:11:17,510 --> 00:11:21,447\nSo thus the name of this podcast\n\n190\n00:11:21,447 --> 00:11:26,519\nseemed very, very fitting.\n - Yeah, very.\n\n- And we'll get into a lot more of that\n\n191\n00:11:26,519 --> 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32,858 --> 00:11:38,497\nThey do explore the tension \nbetween home life,\n\n",
+    "expected_python": {
+      "srt": "1\n00:11:17,510 --> 00:11:21,447\nSo thus the name of this podcast\n\n2\n00:11:21,452 --> 00:11:26,519\nseemed very, very fitting.\n- Yeah, very.\n- And we'll get into a lot more of that\n\n3\n00:11:26,524 --> 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n4\n00:11:32,863 --> 00:11:38,497\nThey do explore the tension\nbetween home life,\n",
+      "vtt": "WEBVTT\n\n00:11:17.510 --> 00:11:21.447\nSo thus the name of this podcast\n\n00:11:21.452 --> 00:11:26.519\nseemed very, very fitting.\n- Yeah, very.\n- And we'll get into a lot more of that\n\n00:11:26.524 --> 00:11:32.858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n00:11:32.863 --> 00:11:38.497\nThey do explore the tension\nbetween home life,"
+    },
+    "expected_cues": [
+      {
+        "start": 677.51,
+        "end": 681.447,
+        "text": [
+          "So thus the name of this podcast"
+        ]
+      },
+      {
+        "start": 681.452,
+        "end": 686.519,
+        "text": [
+          "seemed very, very fitting.",
+          "- Yeah, very.",
+          "- And we'll get into a lot more of that"
+        ]
+      },
+      {
+        "start": 686.524,
+        "end": 692.858,
+        "text": [
+          "throughout these episodes as these topics",
+          "that we're going to explore..."
+        ]
+      },
+      {
+        "start": 692.8629999999999,
+        "end": 698.497,
+        "text": [
+          "They do explore the tension",
+          "between home life,"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 677.51,
+        "end": 681.447,
+        "text": [
+          "So thus the name of this podcast"
+        ]
+      },
+      {
+        "start": 681.452,
+        "end": 686.519,
+        "text": [
+          "seemed very, very fitting.",
+          "- Yeah, very.",
+          "- And we'll get into a lot more of that"
+        ]
+      },
+      {
+        "start": 686.524,
+        "end": 692.858,
+        "text": [
+          "throughout these episodes as these topics",
+          "that we're going to explore..."
+        ]
+      },
+      {
+        "start": 692.8629999999999,
+        "end": 698.497,
+        "text": [
+          "They do explore the tension",
+          "between home life,"
+        ]
+      }
+    ],
+    "repaired_source": "189\n00:11:17,510 --> 00:11:21,447\nSo thus the name of this podcast\n\n190\n00:11:21,447 --> 00:11:26,519\nseemed very, very fitting.\n - Yeah, very.\n- And we'll get into a lot more of that\n\n191\n00:11:26,519 --> 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32,858 --> 00:11:38,497\nThey do explore the tension \nbetween home life,\n\n",
+    "expected_browser": {
+      "srt": "1\n00:11:17,510 --> 00:11:21,447\nSo thus the name of this podcast\n\n2\n00:11:21,452 --> 00:11:26,519\nseemed very, very fitting.\n- Yeah, very.\n- And we'll get into a lot more of that\n\n3\n00:11:26,524 --> 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n4\n00:11:32,863 --> 00:11:38,497\nThey do explore the tension\nbetween home life,\n",
+      "vtt": "WEBVTT\n\n00:11:17.510 --> 00:11:21.447\nSo thus the name of this podcast\n\n00:11:21.452 --> 00:11:26.519\nseemed very, very fitting.\n- Yeah, very.\n- And we'll get into a lot more of that\n\n00:11:26.524 --> 00:11:32.858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n00:11:32.863 --> 00:11:38.497\nThey do explore the tension\nbetween home life,\n"
+    }
+  },
+  {
+    "name": "episode_1_embedded_vtt_header",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "expected_python": {
+      "srt": "1\n00:11:21,447 --> 00:11:26,447\nseemed very, very fitting.\nYeah, very.\n\n2\n00:11:26,519 --> 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n3\n00:11:32,863 --> 00:11:37,858\nThey do explore the tension\nbetween home life,\n",
+      "vtt": "WEBVTT\n\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\nYeah, very.\n\n00:11:26.519 --> 00:11:32.858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n00:11:32.863 --> 00:11:37.858\nThey do explore the tension\nbetween home life,"
+    },
+    "expected_cues": [
+      {
+        "start": 681.447,
+        "end": 686.447,
+        "text": [
+          "seemed very, very fitting.",
+          "Yeah, very."
+        ]
+      },
+      {
+        "start": 686.519,
+        "end": 692.858,
+        "text": [
+          "throughout these episodes as these topics",
+          "that we're going to explore..."
+        ]
+      },
+      {
+        "start": 692.8629999999999,
+        "end": 697.858,
+        "text": [
+          "They do explore the tension",
+          "between home life,"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 681.447,
+        "end": 686.447,
+        "text": [
+          "seemed very, very fitting.",
+          "Yeah, very."
+        ]
+      },
+      {
+        "start": 686.519,
+        "end": 692.858,
+        "text": [
+          "throughout these episodes as these topics",
+          "that we're going to explore..."
+        ]
+      },
+      {
+        "start": 692.8629999999999,
+        "end": 697.858,
+        "text": [
+          "They do explore the tension",
+          "between home life,"
+        ]
+      }
+    ],
+    "repaired_source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.519 --> 00:11:32.858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "expected_browser": {
+      "srt": "1\n00:11:21,447 --> 00:11:26,447\nseemed very, very fitting.\nYeah, very.\n\n2\n00:11:26,519 --> 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n3\n00:11:32,863 --> 00:11:37,858\nThey do explore the tension\nbetween home life,\n",
+      "vtt": "WEBVTT\n\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\nYeah, very.\n\n00:11:26.519 --> 00:11:32.858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n00:11:32.863 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_33",
+    "format": "srt",
+    "source": "33\n00:01:32,759 --> 00:01:35,395\n\n - Although you do keep putting me in\ncameos in your movies.\n\n34\n00:01:35,395 --> 00:01:38,731\n- Yeah, I always, always put a cameo\nas often as I can.\n\n",
+    "expected_python": {
+      "srt": "1\n00:01:32,759 --> 00:01:35,395\n- Although you do keep putting me in\ncameos in your movies.\n\n2\n00:01:35,400 --> 00:01:38,731\n- Yeah, I always, always put a cameo\nas often as I can.\n",
+      "vtt": "WEBVTT\n\n00:01:32.759 --> 00:01:35.395\n- Although you do keep putting me in\ncameos in your movies.\n\n00:01:35.400 --> 00:01:38.731\n- Yeah, I always, always put a cameo\nas often as I can."
+    },
+    "expected_cues": [
+      {
+        "start": 92.759,
+        "end": 95.395,
+        "text": [
+          "- Although you do keep putting me in",
+          "cameos in your movies."
+        ]
+      },
+      {
+        "start": 95.39999999999999,
+        "end": 98.731,
+        "text": [
+          "- Yeah, I always, always put a cameo",
+          "as often as I can."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 92.759,
+        "end": 95.395,
+        "text": [
+          "- Although you do keep putting me in",
+          "cameos in your movies."
+        ]
+      },
+      {
+        "start": 95.39999999999999,
+        "end": 98.731,
+        "text": [
+          "- Yeah, I always, always put a cameo",
+          "as often as I can."
+        ]
+      }
+    ],
+    "repaired_source": "33\n00:01:32,759 --> 00:01:35,395\n - Although you do keep putting me in\ncameos in your movies.\n\n34\n00:01:35,395 --> 00:01:38,731\n- Yeah, I always, always put a cameo\nas often as I can.\n\n",
+    "expected_browser": {
+      "srt": "1\n00:01:32,759 --> 00:01:35,395\n- Although you do keep putting me in\ncameos in your movies.\n\n2\n00:01:35,400 --> 00:01:38,731\n- Yeah, I always, always put a cameo\nas often as I can.\n",
+      "vtt": "WEBVTT\n\n00:01:32.759 --> 00:01:35.395\n- Although you do keep putting me in\ncameos in your movies.\n\n00:01:35.400 --> 00:01:38.731\n- Yeah, I always, always put a cameo\nas often as I can.\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_35",
+    "format": "srt",
+    "source": "35\n00:01:38,731 --> 00:01:43,303\n\n Did you experience any of that struggle\n\n36\n00:01:43,303 --> 00:01:47,841\nfor numbers, praise of men\nwhen you released your book?\n\n",
+    "expected_python": {
+      "srt": "1\n00:01:38,731 --> 00:01:43,303\nDid you experience any of that struggle\n\n2\n00:01:43,308 --> 00:01:47,841\nfor numbers, praise of men\nwhen you released your book?\n",
+      "vtt": "WEBVTT\n\n00:01:38.731 --> 00:01:43.303\nDid you experience any of that struggle\n\n00:01:43.308 --> 00:01:47.841\nfor numbers, praise of men\nwhen you released your book?"
+    },
+    "expected_cues": [
+      {
+        "start": 98.731,
+        "end": 103.303,
+        "text": [
+          "Did you experience any of that struggle"
+        ]
+      },
+      {
+        "start": 103.30799999999999,
+        "end": 107.841,
+        "text": [
+          "for numbers, praise of men",
+          "when you released your book?"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 98.731,
+        "end": 103.303,
+        "text": [
+          "Did you experience any of that struggle"
+        ]
+      },
+      {
+        "start": 103.30799999999999,
+        "end": 107.841,
+        "text": [
+          "for numbers, praise of men",
+          "when you released your book?"
+        ]
+      }
+    ],
+    "repaired_source": "35\n00:01:38,731 --> 00:01:43,303\n Did you experience any of that struggle\n\n36\n00:01:43,303 --> 00:01:47,841\nfor numbers, praise of men\nwhen you released your book?\n\n",
+    "expected_browser": {
+      "srt": "1\n00:01:38,731 --> 00:01:43,303\nDid you experience any of that struggle\n\n2\n00:01:43,308 --> 00:01:47,841\nfor numbers, praise of men\nwhen you released your book?\n",
+      "vtt": "WEBVTT\n\n00:01:38.731 --> 00:01:43.303\nDid you experience any of that struggle\n\n00:01:43.308 --> 00:01:47.841\nfor numbers, praise of men\nwhen you released your book?\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_37",
+    "format": "srt",
+    "source": "37\n00:01:47,841 --> 00:01:52,212\n\n - I mean, I'm sure it was kind of there.\n\n38\n00:01:52,212 --> 00:01:55,782\nI think I struggled more\nbecause it would have determined\n\n",
+    "expected_python": {
+      "srt": "1\n00:01:47,841 --> 00:01:52,212\n- I mean, I'm sure it was kind of there.\n\n2\n00:01:52,217 --> 00:01:55,782\nI think I struggled more\nbecause it would have determined\n",
+      "vtt": "WEBVTT\n\n00:01:47.841 --> 00:01:52.212\n- I mean, I'm sure it was kind of there.\n\n00:01:52.217 --> 00:01:55.782\nI think I struggled more\nbecause it would have determined"
+    },
+    "expected_cues": [
+      {
+        "start": 107.841,
+        "end": 112.212,
+        "text": [
+          "- I mean, I'm sure it was kind of there."
+        ]
+      },
+      {
+        "start": 112.217,
+        "end": 115.782,
+        "text": [
+          "I think I struggled more",
+          "because it would have determined"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 107.841,
+        "end": 112.212,
+        "text": [
+          "- I mean, I'm sure it was kind of there."
+        ]
+      },
+      {
+        "start": 112.217,
+        "end": 115.782,
+        "text": [
+          "I think I struggled more",
+          "because it would have determined"
+        ]
+      }
+    ],
+    "repaired_source": "37\n00:01:47,841 --> 00:01:52,212\n - I mean, I'm sure it was kind of there.\n\n38\n00:01:52,212 --> 00:01:55,782\nI think I struggled more\nbecause it would have determined\n\n",
+    "expected_browser": {
+      "srt": "1\n00:01:47,841 --> 00:01:52,212\n- I mean, I'm sure it was kind of there.\n\n2\n00:01:52,217 --> 00:01:55,782\nI think I struggled more\nbecause it would have determined\n",
+      "vtt": "WEBVTT\n\n00:01:47.841 --> 00:01:52.212\n- I mean, I'm sure it was kind of there.\n\n00:01:52.217 --> 00:01:55.782\nI think I struggled more\nbecause it would have determined\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_45",
+    "format": "srt",
+    "source": "45\n00:02:13,299 --> 00:02:14,567\n\n - Yeah, just recently.\n\n46\n00:02:14,567 --> 00:02:16,569\n- Recently, you would need to \nget back on social media\n\n",
+    "expected_python": {
+      "srt": "1\n00:02:13,299 --> 00:02:14,567\n- Yeah, just recently.\n\n2\n00:02:14,572 --> 00:02:16,569\n- Recently, you would need to\nget back on social media\n",
+      "vtt": "WEBVTT\n\n00:02:13.299 --> 00:02:14.567\n- Yeah, just recently.\n\n00:02:14.572 --> 00:02:16.569\n- Recently, you would need to\nget back on social media"
+    },
+    "expected_cues": [
+      {
+        "start": 133.299,
+        "end": 134.567,
+        "text": [
+          "- Yeah, just recently."
+        ]
+      },
+      {
+        "start": 134.572,
+        "end": 136.569,
+        "text": [
+          "- Recently, you would need to",
+          "get back on social media"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 133.299,
+        "end": 134.567,
+        "text": [
+          "- Yeah, just recently."
+        ]
+      },
+      {
+        "start": 134.572,
+        "end": 136.569,
+        "text": [
+          "- Recently, you would need to",
+          "get back on social media"
+        ]
+      }
+    ],
+    "repaired_source": "45\n00:02:13,299 --> 00:02:14,567\n - Yeah, just recently.\n\n46\n00:02:14,567 --> 00:02:16,569\n- Recently, you would need to \nget back on social media\n\n",
+    "expected_browser": {
+      "srt": "1\n00:02:13,299 --> 00:02:14,567\n- Yeah, just recently.\n\n2\n00:02:14,572 --> 00:02:16,569\n- Recently, you would need to\nget back on social media\n",
+      "vtt": "WEBVTT\n\n00:02:13.299 --> 00:02:14.567\n- Yeah, just recently.\n\n00:02:14.572 --> 00:02:16.569\n- Recently, you would need to\nget back on social media\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_91",
+    "format": "srt",
+    "source": "91\n00:04:30,536 --> 00:04:31,537\n\n - Yeah, yeah.\n\n92\n00:04:31,537 --> 00:04:36,676\n- There was, there was like a guide\nafter the fact of this realization\n\n",
+    "expected_python": {
+      "srt": "1\n00:04:30,536 --> 00:04:31,537\n- Yeah, yeah.\n\n2\n00:04:31,542 --> 00:04:36,676\n- There was, there was like a guide\nafter the fact of this realization\n",
+      "vtt": "WEBVTT\n\n00:04:30.536 --> 00:04:31.537\n- Yeah, yeah.\n\n00:04:31.542 --> 00:04:36.676\n- There was, there was like a guide\nafter the fact of this realization"
+    },
+    "expected_cues": [
+      {
+        "start": 270.536,
+        "end": 271.537,
+        "text": [
+          "- Yeah, yeah."
+        ]
+      },
+      {
+        "start": 271.542,
+        "end": 276.676,
+        "text": [
+          "- There was, there was like a guide",
+          "after the fact of this realization"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 270.536,
+        "end": 271.537,
+        "text": [
+          "- Yeah, yeah."
+        ]
+      },
+      {
+        "start": 271.542,
+        "end": 276.676,
+        "text": [
+          "- There was, there was like a guide",
+          "after the fact of this realization"
+        ]
+      }
+    ],
+    "repaired_source": "91\n00:04:30,536 --> 00:04:31,537\n - Yeah, yeah.\n\n92\n00:04:31,537 --> 00:04:36,676\n- There was, there was like a guide\nafter the fact of this realization\n\n",
+    "expected_browser": {
+      "srt": "1\n00:04:30,536 --> 00:04:31,537\n- Yeah, yeah.\n\n2\n00:04:31,542 --> 00:04:36,676\n- There was, there was like a guide\nafter the fact of this realization\n",
+      "vtt": "WEBVTT\n\n00:04:30.536 --> 00:04:31.537\n- Yeah, yeah.\n\n00:04:31.542 --> 00:04:36.676\n- There was, there was like a guide\nafter the fact of this realization\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_119",
+    "format": "srt",
+    "source": "119\n00:06:05,064 --> 00:06:07,100\n\n - Yeah. You're like, stick it to you.\n\n120\n00:06:07,100 --> 00:06:10,436\n- I wanted to show them,\nlike we did this outside the system.\n\n",
+    "expected_python": {
+      "srt": "1\n00:06:05,064 --> 00:06:07,100\n- Yeah. You're like, stick it to you.\n\n2\n00:06:07,105 --> 00:06:10,436\n- I wanted to show them,\nlike we did this outside the system.\n",
+      "vtt": "WEBVTT\n\n00:06:05.064 --> 00:06:07.100\n- Yeah. You're like, stick it to you.\n\n00:06:07.105 --> 00:06:10.436\n- I wanted to show them,\nlike we did this outside the system."
+    },
+    "expected_cues": [
+      {
+        "start": 365.064,
+        "end": 367.1,
+        "text": [
+          "- Yeah. You're like, stick it to you."
+        ]
+      },
+      {
+        "start": 367.105,
+        "end": 370.436,
+        "text": [
+          "- I wanted to show them,",
+          "like we did this outside the system."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 365.064,
+        "end": 367.1,
+        "text": [
+          "- Yeah. You're like, stick it to you."
+        ]
+      },
+      {
+        "start": 367.105,
+        "end": 370.436,
+        "text": [
+          "- I wanted to show them,",
+          "like we did this outside the system."
+        ]
+      }
+    ],
+    "repaired_source": "119\n00:06:05,064 --> 00:06:07,100\n - Yeah. You're like, stick it to you.\n\n120\n00:06:07,100 --> 00:06:10,436\n- I wanted to show them,\nlike we did this outside the system.\n\n",
+    "expected_browser": {
+      "srt": "1\n00:06:05,064 --> 00:06:07,100\n- Yeah. You're like, stick it to you.\n\n2\n00:06:07,105 --> 00:06:10,436\n- I wanted to show them,\nlike we did this outside the system.\n",
+      "vtt": "WEBVTT\n\n00:06:05.064 --> 00:06:07.100\n- Yeah. You're like, stick it to you.\n\n00:06:07.105 --> 00:06:10.436\n- I wanted to show them,\nlike we did this outside the system.\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_130",
+    "format": "srt",
+    "source": "130\n00:06:37,230 --> 00:06:38,097\n\n - Yeah.\n\n131\n00:06:38,097 --> 00:06:42,268\nI mean, when you set out to do something\nfor the Lord, if you don't get the enemy's\n\n",
+    "expected_python": {
+      "srt": "1\n00:06:37,230 --> 00:06:38,097\n- Yeah.\n\n2\n00:06:38,102 --> 00:06:42,268\nI mean, when you set out to do something\nfor the Lord, if you don't get the enemy's\n",
+      "vtt": "WEBVTT\n\n00:06:37.230 --> 00:06:38.097\n- Yeah.\n\n00:06:38.102 --> 00:06:42.268\nI mean, when you set out to do something\nfor the Lord, if you don't get the enemy's"
+    },
+    "expected_cues": [
+      {
+        "start": 397.23,
+        "end": 398.097,
+        "text": [
+          "- Yeah."
+        ]
+      },
+      {
+        "start": 398.102,
+        "end": 402.268,
+        "text": [
+          "I mean, when you set out to do something",
+          "for the Lord, if you don't get the enemy's"
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 397.23,
+        "end": 398.097,
+        "text": [
+          "- Yeah."
+        ]
+      },
+      {
+        "start": 398.102,
+        "end": 402.268,
+        "text": [
+          "I mean, when you set out to do something",
+          "for the Lord, if you don't get the enemy's"
+        ]
+      }
+    ],
+    "repaired_source": "130\n00:06:37,230 --> 00:06:38,097\n - Yeah.\n\n131\n00:06:38,097 --> 00:06:42,268\nI mean, when you set out to do something\nfor the Lord, if you don't get the enemy's\n\n",
+    "expected_browser": {
+      "srt": "1\n00:06:37,230 --> 00:06:38,097\n- Yeah.\n\n2\n00:06:38,102 --> 00:06:42,268\nI mean, when you set out to do something\nfor the Lord, if you don't get the enemy's\n",
+      "vtt": "WEBVTT\n\n00:06:37.230 --> 00:06:38.097\n- Yeah.\n\n00:06:38.102 --> 00:06:42.268\nI mean, when you set out to do something\nfor the Lord, if you don't get the enemy's\n"
+    }
+  },
+  {
+    "name": "episode_2_srt_cue_183",
+    "format": "srt",
+    "source": "183\n00:09:18,090 --> 00:09:21,093\n\n - Yeah, we have some. \n - Well.\n\n184\n00:09:21,127 --> 00:09:25,431\nCome on. What are you talking about?\n - I'm talking about.\n\n",
+    "expected_python": {
+      "srt": "1\n00:09:18,090 --> 00:09:21,093\n- Yeah, we have some.\n- Well.\n\n2\n00:09:21,127 --> 00:09:25,431\nCome on. What are you talking about?\n- I'm talking about.\n",
+      "vtt": "WEBVTT\n\n00:09:18.090 --> 00:09:21.093\n- Yeah, we have some.\n- Well.\n\n00:09:21.127 --> 00:09:25.431\nCome on. What are you talking about?\n- I'm talking about."
+    },
+    "expected_cues": [
+      {
+        "start": 558.09,
+        "end": 561.093,
+        "text": [
+          "- Yeah, we have some.",
+          "- Well."
+        ]
+      },
+      {
+        "start": 561.127,
+        "end": 565.431,
+        "text": [
+          "Come on. What are you talking about?",
+          "- I'm talking about."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 558.09,
+        "end": 561.093,
+        "text": [
+          "- Yeah, we have some.",
+          "- Well."
+        ]
+      },
+      {
+        "start": 561.127,
+        "end": 565.431,
+        "text": [
+          "Come on. What are you talking about?",
+          "- I'm talking about."
+        ]
+      }
+    ],
+    "repaired_source": "183\n00:09:18,090 --> 00:09:21,093\n - Yeah, we have some. \n - Well.\n\n184\n00:09:21,127 --> 00:09:25,431\nCome on. What are you talking about?\n - I'm talking about.\n\n",
+    "expected_browser": {
+      "srt": "1\n00:09:18,090 --> 00:09:21,093\n- Yeah, we have some.\n- Well.\n\n2\n00:09:21,127 --> 00:09:25,431\nCome on. What are you talking about?\n- I'm talking about.\n",
+      "vtt": "WEBVTT\n\n00:09:18.090 --> 00:09:21.093\n- Yeah, we have some.\n- Well.\n\n00:09:21.127 --> 00:09:25.431\nCome on. What are you talking about?\n- I'm talking about.\n"
+    }
+  },
+  {
+    "name": "clean_srt_numbers_speakers_and_timing",
+    "format": "srt",
+    "source": "﻿1\r\n00:00:01,000 --> 00:00:02,000\r\n<i>Hello.</i>\r\n- Another speaker.\r\n1999.\r\n42\r\n\r\n2\r\n00:00:01,999 --> 00:00:01,999\r\nKeep the timing adjustment.\r\n\r\n3\r\n00:00:04,000 --> 00:00:06,000\r\nLast line.\r\n",
+    "expected_python": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nHello.\n- Another speaker.\n1999.\n42\n\n2\n00:00:02,005 --> 00:00:02,010\nKeep the timing adjustment.\n\n3\n00:00:04,000 --> 00:00:06,000\nLast line.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nHello.\n- Another speaker.\n1999.\n42\n\n00:00:02.005 --> 00:00:02.010\nKeep the timing adjustment.\n\n00:00:04.000 --> 00:00:06.000\nLast line."
+    },
+    "expected_cues": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "Hello.",
+          "- Another speaker.",
+          "1999.",
+          "42"
+        ]
+      },
+      {
+        "start": 2.005,
+        "end": 2.01,
+        "text": [
+          "Keep the timing adjustment."
+        ]
+      },
+      {
+        "start": 4,
+        "end": 6,
+        "text": [
+          "Last line."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "<i>Hello.</i>",
+          "- Another speaker.",
+          "1999.",
+          "42"
+        ]
+      },
+      {
+        "start": 2.005,
+        "end": 2.01,
+        "text": [
+          "Keep the timing adjustment."
+        ]
+      },
+      {
+        "start": 4,
+        "end": 6,
+        "text": [
+          "Last line."
+        ]
+      }
+    ],
+    "repaired_source": "﻿1\r\n00:00:01,000 --> 00:00:02,000\r\n<i>Hello.</i>\r\n- Another speaker.\r\n1999.\r\n42\r\n\r\n2\r\n00:00:01,999 --> 00:00:01,999\r\nKeep the timing adjustment.\r\n\r\n3\r\n00:00:04,000 --> 00:00:06,000\r\nLast line.\r\n",
+    "expected_browser": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nHello.\n- Another speaker.\n1999.\n42\n\n2\n00:00:02,005 --> 00:00:02,010\nKeep the timing adjustment.\n\n3\n00:00:04,000 --> 00:00:06,000\nLast line.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nHello.\n- Another speaker.\n1999.\n42\n\n00:00:02.005 --> 00:00:02.010\nKeep the timing adjustment.\n\n00:00:04.000 --> 00:00:06.000\nLast line.\n"
+    }
+  },
+  {
+    "name": "clean_vtt_settings_metadata_and_numbers",
+    "format": "vtt",
+    "source": "WEBVTT\n\nNOTE a comment\nnot dialogue\n\nSTYLE\n::cue { color: white; }\n\nfirst-id\n00:01.100 --> 00:02.500 align:start\n<v John>Hi &amp; welcome.</v>\n1999.\n42\n\nsecond-id\n00:02.500 --> 00:04.000\n<i>Next line.</i>\n",
+    "expected_python": {
+      "srt": "1\n00:00:01,100 --> 00:00:02,500\nHi & welcome.\n1999.\n42\n\n2\n00:00:02,505 --> 00:00:04,000\nNext line.\n",
+      "vtt": "WEBVTT\n\n00:00:01.100 --> 00:00:02.500\nHi &amp; welcome.\n1999.\n42\n\n00:00:02.505 --> 00:00:04.000\nNext line."
+    },
+    "expected_cues": [
+      {
+        "start": 1.1,
+        "end": 2.5,
+        "text": [
+          "Hi & welcome.",
+          "1999.",
+          "42"
+        ]
+      },
+      {
+        "start": 2.505,
+        "end": 4,
+        "text": [
+          "Next line."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 1.1,
+        "end": 2.5,
+        "text": [
+          "Hi & welcome.",
+          "1999.",
+          "42"
+        ]
+      },
+      {
+        "start": 2.505,
+        "end": 4,
+        "text": [
+          "<i>Next line.</i>"
+        ]
+      }
+    ],
+    "repaired_source": "WEBVTT\n\nNOTE a comment\nnot dialogue\n\nSTYLE\n::cue { color: white; }\n\nfirst-id\n00:01.100 --> 00:02.500 align:start\n<v John>Hi &amp; welcome.</v>\n1999.\n42\n\nsecond-id\n00:02.500 --> 00:04.000\n<i>Next line.</i>\n",
+    "expected_browser": {
+      "srt": "1\n00:00:01,100 --> 00:00:02,500\nHi & welcome.\n1999.\n42\n\n2\n00:00:02,505 --> 00:00:04,000\nNext line.\n",
+      "vtt": "WEBVTT\n\n00:00:01.100 --> 00:00:02.500\nHi &amp; welcome.\n1999.\n42\n\n00:00:02.505 --> 00:00:04.000\nNext line.\n"
+    }
+  },
+  {
+    "name": "clean_srt_merged_cues",
+    "format": "srt",
+    "source": "1\n00:00:01,000 --> 00:00:02,000\nFirst.\n\n2\n00:00:01,010 --> 00:00:02,010\nSecond.\n\n3\n00:00:03,000 --> 00:00:04,000\nThird.\n",
+    "expected_python": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nFirst.\nSecond.\n\n2\n00:00:03,000 --> 00:00:04,000\nThird.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nFirst.\nSecond.\n\n00:00:03.000 --> 00:00:04.000\nThird."
+    },
+    "expected_cues": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "First.",
+          "Second."
+        ]
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "text": [
+          "Third."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "First.",
+          "Second."
+        ]
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "text": [
+          "Third."
+        ]
+      }
+    ],
+    "repaired_source": "1\n00:00:01,000 --> 00:00:02,000\nFirst.\n\n2\n00:00:01,010 --> 00:00:02,010\nSecond.\n\n3\n00:00:03,000 --> 00:00:04,000\nThird.\n",
+    "expected_browser": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nFirst.\nSecond.\n\n2\n00:00:03,000 --> 00:00:04,000\nThird.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nFirst.\nSecond.\n\n00:00:03.000 --> 00:00:04.000\nThird.\n"
+    }
+  },
+  {
+    "name": "clean_vtt_zero_duration_no_embedded_header",
+    "format": "vtt",
+    "source": "WEBVTT\n\n00:00:01.000 --> 00:00:01.000\nA valid normalization case.\n\n00:00:02.000 --> 00:00:03.000\nNext.\n",
+    "expected_python": {
+      "srt": "1\n00:00:01,000 --> 00:00:01,005\nA valid normalization case.\n\n2\n00:00:02,000 --> 00:00:03,000\nNext.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:01.005\nA valid normalization case.\n\n00:00:02.000 --> 00:00:03.000\nNext."
+    },
+    "expected_cues": [
+      {
+        "start": 1,
+        "end": 1.005,
+        "text": [
+          "A valid normalization case."
+        ]
+      },
+      {
+        "start": 2,
+        "end": 3,
+        "text": [
+          "Next."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 1,
+        "end": 1.005,
+        "text": [
+          "A valid normalization case."
+        ]
+      },
+      {
+        "start": 2,
+        "end": 3,
+        "text": [
+          "Next."
+        ]
+      }
+    ],
+    "repaired_source": "WEBVTT\n\n00:00:01.000 --> 00:00:01.000\nA valid normalization case.\n\n00:00:02.000 --> 00:00:03.000\nNext.\n",
+    "expected_browser": {
+      "srt": "1\n00:00:01,000 --> 00:00:01,005\nA valid normalization case.\n\n2\n00:00:02,000 --> 00:00:03,000\nNext.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:01.005\nA valid normalization case.\n\n00:00:02.000 --> 00:00:03.000\nNext.\n"
+    }
+  },
+  {
+    "name": "detached_numeric_dialogue_stays_dialogue",
+    "format": "srt",
+    "source": "1\n00:00:01,000 --> 00:00:02,000\nThe year was\n\n1999.\n42\n\n2\n00:00:03,000 --> 00:00:04,000\nNext.\n",
+    "expected_python": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nThe year was\n1999.\n42\n\n2\n00:00:03,000 --> 00:00:04,000\nNext.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nThe year was\n1999.\n42\n\n00:00:03.000 --> 00:00:04.000\nNext."
+    },
+    "expected_cues": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "The year was",
+          "1999.",
+          "42"
+        ]
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "text": [
+          "Next."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "The year was",
+          "1999.",
+          "42"
+        ]
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "text": [
+          "Next."
+        ]
+      }
+    ],
+    "repaired_source": "1\n00:00:01,000 --> 00:00:02,000\nThe year was\n1999.\n42\n\n2\n00:00:03,000 --> 00:00:04,000\nNext.\n",
+    "expected_browser": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nThe year was\n1999.\n42\n\n2\n00:00:03,000 --> 00:00:04,000\nNext.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nThe year was\n1999.\n42\n\n00:00:03.000 --> 00:00:04.000\nNext.\n"
+    }
+  },
+  {
+    "name": "vtt_detached_dialogue",
+    "format": "vtt",
+    "source": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\n\nOne.\n\nTwo.\n\n00:00:03.000 --> 00:00:04.000\nNext.\n",
+    "expected_python": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nOne.\nTwo.\n\n2\n00:00:03,000 --> 00:00:04,000\nNext.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nOne.\nTwo.\n\n00:00:03.000 --> 00:00:04.000\nNext."
+    },
+    "expected_cues": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "One.",
+          "Two."
+        ]
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "text": [
+          "Next."
+        ]
+      }
+    ],
+    "expected_keep_biu": [
+      {
+        "start": 1,
+        "end": 2,
+        "text": [
+          "One.",
+          "Two."
+        ]
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "text": [
+          "Next."
+        ]
+      }
+    ],
+    "repaired_source": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nOne.\nTwo.\n\n00:00:03.000 --> 00:00:04.000\nNext.\n",
+    "expected_browser": {
+      "srt": "1\n00:00:01,000 --> 00:00:02,000\nOne.\nTwo.\n\n2\n00:00:03,000 --> 00:00:04,000\nNext.\n",
+      "vtt": "WEBVTT\n\n00:00:01.000 --> 00:00:02.000\nOne.\nTwo.\n\n00:00:03.000 --> 00:00:04.000\nNext.\n"
+    }
+  },
+  {
+    "name": "unowned_prefix",
+    "format": "srt",
+    "source": "Lost dialogue.\n\n1\n00:00:01,000 --> 00:00:02,000\nOne.\n",
+    "error": "dialogue has no valid timing header"
+  },
+  {
+    "name": "unowned_vtt_prefix",
+    "format": "vtt",
+    "source": "WEBVTT\n\nLost dialogue.\n\n00:00:01.000 --> 00:00:02.000\nOne.\n",
+    "error": "dialogue has no valid timing header"
+  },
+  {
+    "name": "ambiguous_tail",
+    "format": "srt",
+    "source": "1\n00:00:01,000 --> 00:00:02,000\nOne.\n\nDetached dialogue at EOF.\n",
+    "error": "ambiguous cue ownership"
+  },
+  {
+    "name": "ambiguous_numbering",
+    "format": "srt",
+    "source": "1\n00:00:01,000 --> 00:00:02,000\nOne.\n\nUnassigned dialogue.\n\n3\n00:00:03,000 --> 00:00:04,000\nThree.\n",
+    "error": "ambiguous cue ownership"
+  },
+  {
+    "name": "invalid_timing_in_detached_block",
+    "format": "srt",
+    "source": "1\n00:00:01,000 --> 00:00:02,000\nOne.\n\n2\n00:00:xx,000 --> 00:00:04,000\nKeep this text for review.\n\n3\n00:00:05,000 --> 00:00:06,000\nThree.\n",
+    "error": "unrecognized or misplaced timing header"
+  },
+  {
+    "name": "embedded_out_of_range",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:39,999\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_duplicate_id_mismatch",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n999\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_outer_duration_positive",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:32.858\n191\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_missing_duplicate_id",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_no_surrounding_cues",
+    "format": "vtt",
+    "source": "191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_timing_has_trailing_dialogue",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:32,858 KEEP THIS DIALOGUE\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_multiple_headers",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:32,858\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_invalid_previous_interval",
+    "format": "vtt",
+    "source": "190\n00:11:27.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_invalid_next_interval",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\n191\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:30.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  },
+  {
+    "name": "embedded_later_in_dialogue",
+    "format": "vtt",
+    "source": "190\n00:11:21.447 --> 00:11:26.447\nseemed very, very fitting.\n<v ->Yeah, very.</v>\n\n191\n00:11:26.447 --> 00:11:26.447\nKeep this first line.\n191\n00:11:26,519 --&gt; 00:11:32,858\nthroughout these episodes as these topics\nthat we're going to explore...\n\n192\n00:11:32.858 --> 00:11:37.858\nThey do explore the tension\nbetween home life,\n\n",
+    "error": "embedded SRT header cannot be safely assigned"
+  }
+]

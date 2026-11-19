@@ -98,3 +98,22 @@ Linux release checks install the package on Ubuntu 22.04 and 24.04 (the bases of
 
 - The original macOS app used a Swift dialog for format selection. This rebuild removes that dependency so the app can run on Windows, macOS, and Linux Mint from the same Python codebase.
 - The browser version mirrors the core subtitle conversion flow but runs entirely in JavaScript because GitHub Pages cannot execute Python server code.
+
+## Malformed Caption Checks
+
+The desktop and browser converters inspect the original cue headers before parsing:
+
+- Extra blank lines inside a cue are removed when consecutive SRT cue numbers or ordered VTT timings establish ownership. Dialogue order, nonempty line breaks, and source times are retained before the usual normalization.
+- A duplicate SRT header inside a VTT cue can restore timing only when its number matches the outer cue, the outer duration is invalid, and the embedded interval fits between two valid neighboring cues. The duplicate header is removed from the displayed dialogue.
+- Unowned text, unclear boundaries, and unsafe embedded timings stop conversion for that file. The existing error flow identifies the file, source line, cue when available, and text to review. No outputs are written for that file; desktop batches continue with other files.
+
+Keep the source file for review. Text already absent from a source cannot be recovered by conversion. Valid files retain the existing formatting, naming, output defaults, and timing normalization.
+
+## Regression Tests
+
+```bash
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+node --test tests/caption_validation.test.cjs
+```
+
+The shared fixtures contain short Episode 1 and 2 excerpts plus clean and ambiguous examples. Checks compare dialogue, line breaks, and timings rather than only cue counts. Clean expected outputs were captured from the previous converter. CLI, desktop batch warning handling, browser conversion, output naming, and source preservation are also covered. These checks gate Pages deployment and release publication.

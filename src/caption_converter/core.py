@@ -5,6 +5,8 @@ from pathlib import Path
 import html
 import re
 
+from .validation import prepare_caption_content
+
 
 ALLOWED_VTT_TAGS = {"b", "i", "u", "c", "ruby", "rt", "v", "lang"}
 TAG_CAPTURE = re.compile(r"<(/?)([A-Za-z]+)([^>]*)>")
@@ -293,7 +295,7 @@ def normalize_cues(cues: list[Cue]) -> list[Cue]:
 
 
 def parse_vtt_cues(vtt_content: str, keep_biu: bool = False) -> list[Cue]:
-    lines = vtt_content.strip().split("\n")
+    lines = prepare_caption_content(vtt_content, "vtt").strip().split("\n")
     cues: list[Cue] = []
     idx = 0
     while idx < len(lines):
@@ -331,7 +333,7 @@ def parse_vtt_cues(vtt_content: str, keep_biu: bool = False) -> list[Cue]:
 
 
 def parse_srt_cues(srt_content: str, keep_biu: bool = False) -> list[Cue]:
-    lines = srt_content.strip().split("\n")
+    lines = prepare_caption_content(srt_content, "srt").strip().split("\n")
     cues: list[Cue] = []
     idx = 0
     while idx < len(lines):

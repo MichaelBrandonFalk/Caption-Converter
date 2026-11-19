@@ -236,8 +236,118 @@ function normalizeCues(cues) {
   return merged;
 }
 
+// Inspect source lines before blank-line parsing can discard dialogue.
+// Valid files pass through unchanged; normalization still uses the existing code.
+function prepareCaptionContent(content, format) {
+  const lines = content.split(/\r\n|\r|\n/);
+  lines[0] = lines[0].replace(/^\uFEFF/, "");
+  const srtTime = "\\d{2,}:[0-5]\\d:[0-5]\\d,\\d{3}";
+  const embeddedSrt = new RegExp(`^\\s*(${srtTime})\\s+-->\\s+(${srtTime})\\s*$`);
+  const vttTime = "(?:\\d{1,}:)?[0-5]\\d:[0-5]\\d(?:\\.\\d{1,3})?";
+  const patterns = Object.fromEntries(Object.entries({ srt: srtTime, vtt: vttTime }).map(
+    ([key, time]) => [key, new RegExp(`^\\s*(${time})\\s+-->\\s+(${time})(?:[ \\t]+.*)?\\s*$`)]
+  ));
+  const seconds = (value) => {
+    const parts = value.replace(",", ".").split(":");
+    const [sec, fraction = "0"] = parts.at(-1).split(".");
+    return (parts.length === 3 ? Number(parts[0]) * 3600 : 0) + Number(parts.at(-2)) * 60 + Number(sec) + Number(fraction) / 1000;
+  };
+  const ignored = new Set();
+  if (format === "vtt") {
+    for (let i = 0; i < lines.length; i += 1) {
+      const line = lines[i].trim();
+      if (i === 0 && line.startsWith("WEBVTT")) {
+        ignored.add(i);
+        while (i + 1 < lines.length && lines[i + 1].startsWith("X-TIMESTAMP-MAP=")) ignored.add(++i);
+      } else if ((i === 0 || !lines[i - 1].trim()) && /^(?:NOTE(?:\s|$)|STYLE$|REGION$)/.test(line)) {
+        while (i < lines.length && lines[i].trim()) ignored.add(i++);
+      }
+    }
+  }
+  const headers = [];
+  const review = (reason, line, header, text) => {
+    const cue = header ? (header.identifier ? `cue ${header.identifier}` : `cue at line ${header.line + 1}`) : "unowned text";
+    throw new Error(`Review required (${cue}, source line ${line + 1}): ${reason}. No outputs written; original file unchanged.\nText to review:\n${text.join("\n")}`);
+  };
+  lines.forEach((raw, i) => {
+    if (ignored.has(i)) return;
+    const match = raw.match(patterns[format]);
+    if (!match) return;
+    let first = i;
+    let identifier = null;
+    if (i > 0 && lines[i - 1].trim() && !ignored.has(i - 1)) {
+      const previous = lines[i - 1].trim();
+      if ((i === 1 || !lines[i - 2].trim()) && (format === "srt" ? /^\d+$/.test(previous) : !previous.includes("-->"))) {
+        first = i - 1;
+        identifier = previous;
+      } else {
+        review("timing line has no clear cue boundary", i, null, lines.slice(Math.max(0, i - 1), i + 2));
+      }
+    }
+    headers.push({ line: i, first, identifier, start: seconds(match[1]), end: seconds(match[2]) });
+  });
+  const prefixEnd = headers.length ? headers[0].first : lines.length;
+  for (let i = 0; i < prefixEnd; i += 1) {
+    if (!ignored.has(i) && lines[i].trim()) review("dialogue has no valid timing header", i, null, lines.slice(i, prefixEnd));
+  }
+  const removed = new Set();
+  let changed = false;
+  headers.forEach((header, index) => {
+    const previous = headers[index - 1];
+    const following = headers[index + 1];
+    const stop = following ? following.first : lines.length;
+    let payload = [];
+    for (let i = header.line + 1; i < stop; i += 1) {
+      if (!ignored.has(i) && lines[i].trim()) payload.push(i);
+    }
+    if (format === "vtt") {
+      const embedded = payload.filter((i) => patterns.srt.test(lines[i].replaceAll("&gt;", ">")));
+      if (embedded.length) {
+        const i = embedded[0];
+        const match = lines[i].replaceAll("&gt;", ">").match(patterns.srt);
+        const start = seconds(match[1]);
+        const end = seconds(match[2]);
+        const safe = embedded.length === 1 && payload.length >= 3 && i === payload[1]
+          && embeddedSrt.test(lines[i].replaceAll("&gt;", ">"))
+          && payload[1] === payload[0] + 1 && header.identifier !== null && /^\d+$/.test(header.identifier)
+          && lines[payload[0]].trim() === header.identifier && header.end <= header.start
+          && previous && following && previous.start < previous.end && previous.end <= start
+          && header.start <= start && start < end && end <= following.start && following.start < following.end;
+        if (!safe) review("embedded SRT header cannot be safely assigned within surrounding cue times", i, header, payload.map((j) => lines[j]));
+        lines[header.line] = `${match[1].replace(",", ".")} --> ${match[2].replace(",", ".")}`;
+        header.start = start;
+        header.end = end;
+        payload.slice(0, 2).forEach((j) => removed.add(j));
+        payload = payload.slice(2);
+        changed = true;
+      }
+    }
+    for (const i of payload) {
+      if (/^\s*\d+:\d{2}.*(?:--(?:>|&gt;)|->)/.test(lines[i])) {
+        review("unrecognized or misplaced timing header", i, header, payload.map((j) => lines[j]));
+      }
+    }
+    const blanks = [];
+    for (let i = header.line + 1; i < (payload.length ? payload.at(-1) : header.line + 1); i += 1) {
+      if (!ignored.has(i) && !removed.has(i) && !lines[i].trim()) blanks.push(i);
+    }
+    if (blanks.length) {
+      const numbered = header.identifier !== null && following && following.identifier !== null
+        && /^\d+$/.test(header.identifier) && /^\d+$/.test(following.identifier)
+        && Number(following.identifier) === Number(header.identifier) + 1;
+      const ordered = following && header.start <= header.end && header.end <= following.start;
+      if (!(following && ((format === "srt" && numbered) || (format === "vtt" && ordered)))) {
+        review("detached dialogue has ambiguous cue ownership", blanks[0], header, payload.map((j) => lines[j]));
+      }
+      blanks.forEach((i) => removed.add(i));
+      changed = true;
+    }
+  });
+  return changed ? lines.filter((_, i) => !removed.has(i)).join("\n") : content;
+}
+
 function parseVttCues(content) {
-  const lines = content.trim().split(/\r?\n/);
+  const lines = prepareCaptionContent(content, "vtt").trim().split(/\r?\n/);
   const cues = [];
   let idx = 0;
   while (idx < lines.length) {
@@ -278,7 +388,7 @@ function parseVttCues(content) {
 }
 
 function parseSrtCues(content) {
-  const lines = content.trim().split(/\r?\n/);
+  const lines = prepareCaptionContent(content, "srt").trim().split(/\r?\n/);
   const cues = [];
   let idx = 0;
   while (idx < lines.length) {
@@ -506,6 +616,7 @@ function updateCurrentFile() {
 function handleFiles(fileList) {
   selectedFile = fileList?.[0] || null;
   updateCurrentFile();
+  renderResults([]);
 }
 
 async function convertSelectedFile() {
@@ -518,6 +629,7 @@ async function convertSelectedFile() {
     return;
   }
 
+  renderResults([]);
   const content = await selectedFile.text();
   const inputFormat = inferInputFormat(selectedFile.name, content);
   const cues = inputFormat === "vtt" ? parseVttCues(content) : parseSrtCues(content);
@@ -560,7 +672,7 @@ elements.dropzone.addEventListener("drop", (event) => {
 elements.convertButton.addEventListener("click", () => {
   convertSelectedFile().catch((error) => {
     console.error(error);
-    window.alert(`Conversion failed: ${error.message}`);
+    window.alert(`Conversion failed for ${selectedFile.name}: ${error.message}`);
   });
 });
 
